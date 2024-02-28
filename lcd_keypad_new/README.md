@@ -8,7 +8,7 @@
 
    - Arduino UNO (if you're using Arduino CLI, update sketch.yaml if using another board or device port)
    - 4x4 membrane matrix keypad
-   - LCD display with I2C module
+   - 16x2 LCD display with I2C module
 
 - Software
 
