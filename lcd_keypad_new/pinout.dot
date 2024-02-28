@@ -1,0 +1,43 @@
+graph {
+
+	subgraph cluster_arduino {
+		label="Arduino UNO";
+		style="filled";
+		color="aquamarine";
+
+		D4 -- D5 -- D6 -- D7 -- D8 -- D9 -- D10 -- D11;
+		A4 -- A5 -- Arduino_5V -- Arduino_GND;
+	}
+
+	subgraph cluster_keypad {
+		label="Membrane Keypad";
+		style="filled";
+		color="red";
+
+		OUT1 -- OUT2 -- OUT3 -- OUT4 -- OUT5 -- OUT6 -- OUT7 -- OUT8;
+	}
+
+	subgraph cluster_lcd {
+		label="LCD Display";
+		style="filled";
+		color="green";
+
+		LCD_GND -- VCC -- SDA -- SCL;
+	}
+
+	edge [color="purple"];
+
+	D11 -- OUT1;
+	D10 -- OUT2;
+	D9 -- OUT3;
+	D8 -- OUT4;
+	D7 -- OUT5;
+	D6 -- OUT6;
+	D5 -- OUT7;
+	D4 -- OUT8;
+
+	Arduino_GND -- LCD_GND;
+	Arduino_5V -- VCC;
+	A4 -- SDA;
+	A5 -- SCL;
+}
