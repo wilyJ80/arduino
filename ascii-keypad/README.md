@@ -5,7 +5,7 @@
 ### Requires:
 
 - Hardware
-   - Arduino UNO (update sketch.yaml if using another board or device port)
+   - Arduino UNO (if you're using Arduino CLI, update sketch.yaml if using another board or device port)
    - Membrane 4x4 keyboard
 
 - Software
