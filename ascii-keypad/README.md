@@ -20,3 +20,7 @@
 
 - '#' button is used as 'E' character
 - '*' button is used as 'F' character
+
+### Todo
+
+- Leave pins 2 and 3 free for interrupts
