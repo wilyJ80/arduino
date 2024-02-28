@@ -57,6 +57,9 @@ void loop() {
 
       if (asciiChar == '\r') {
         lcd.clear();  // Clear the LCD
+        lcd.setCursor(0, 0);
+        isSecondLine = 0;
+        charCount = 0;
 
       } else {
 
