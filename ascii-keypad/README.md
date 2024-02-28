@@ -2,11 +2,15 @@
 
 - Write the ASCII characters corresponding to the input of two buttons to a serial monitor.
 
-### This uses:
+### Requires:
 
-- Arduino UNO (update sketch.yaml if using another board or device port)
-- Membrane 4x4 keyboard
-- Serial monitor
+- Hardware
+   - Arduino UNO (update sketch.yaml if using another board or device port)
+   - Membrane 4x4 keyboard
+
+- Software
+   - Keypad.h library
+   - Serial monitor
 
 ### Pinout: 
 
