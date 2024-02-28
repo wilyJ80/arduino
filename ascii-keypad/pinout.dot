@@ -1,0 +1,28 @@
+graph {
+
+	subgraph cluster_board {
+		label="Arduino UNO";
+		style=filled;
+		color=aqua;
+
+		D2 -- D3 -- D4 -- D5 -- D6 -- D7 -- D8 -- D9;
+	}
+
+	subgraph cluster_mem_kb {
+		label="Membrane Keyboard";
+		style=filled;
+		color=red;
+
+		OUT1 -- OUT2 -- OUT3 -- OUT4 -- OUT5 -- OUT6 -- OUT7 -- OUT8;
+	}
+
+	D9 -- OUT1;
+	D8 -- OUT2;
+	D7 -- OUT3;
+	D6 -- OUT4;
+	D5 -- OUT5;
+	D4 -- OUT6;
+	D3 -- OUT7;
+	D2 -- OUT8;
+
+}
