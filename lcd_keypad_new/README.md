@@ -24,3 +24,7 @@
 - '*' button is used as 'F' character
 - Filling the display with characters clears it
 - Display is treated as a single line: carriage return ASCII code 0D clears it.
+
+### TODO
+
+- Remove unnecessary files
