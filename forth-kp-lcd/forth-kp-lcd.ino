@@ -16,32 +16,9 @@ char keys[ROWS][COLS] = {
 byte rowPins[ROWS] = { 11, 10, 9, 8 };
 byte colPins[COLS] = { 7, 6, 5, 4 };
 
-LiquidCrystal_I2C lcd(0x27, 16, 2);  // Change the address (0x27) if needed
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
-
-/* void screen_output() {
-  for (;;) {
-    if (Serial.available()) {
-      delay(100);
-      lcd.clear();
-      while (Serial.available() > 0) {
-        lcd.write(Serial.read());
-      }
-    }
-  }
-} */
-
-void write_char() {
-  char key = keypad.getKey();  // Get the key press
-  if (key) {                   // Check if there is a key press
-    if (key == 'D') {
-      lcd.clear();  // If the key is 'D', clear the LCD
-    } else {
-      lcd.print(key);  // Print the pressed key on the LCD
-    }
-  }
-}
 
 void continuous() {
   for (;;) {
