@@ -64,7 +64,8 @@ const char code[] PROGMEM =
 
 void setup() {
   lcd.init();
- 
+  lcd.backlight();
+  Serial.begin(115200);
   n4_api(0, continuous);
   n4_setup(code);
 }
